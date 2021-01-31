@@ -8,6 +8,86 @@ html {
 body {
     background-color: transparent;
     margin: 0px;
+    overflow-x: hidden;
+}
+
+
+/* main */
+
+.main {
+    margin: auto;
+    width: 70%;
+}
+
+.main-cover {
+    margin: auto;
+    display: grid;
+    grid-template-rows: 30px 60x 800px;
+}
+
+.title {
+    text-align: center;
+    color: #231c57;
+    font-size: 32px;
+}
+
+
+/* Header */
+
+.header {
+    height: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.logo {
+    display: inline-block !important;
+    vertical-align: middle;
+    margin-top: -10px;
+}
+
+.logo-text {
+    color: #3d9ae2;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Cabin, sans-serif;
+}
+
+.logo-sub-text {
+    color: #231c57;
+    font-size: 32px;
+    font-weight: 540;
+    -webkit-font-smoothing: antialiased;
+    font-family: Cabin, sans-serif;
+}
+
+.holder a {
+    text-decoration: none;
+}
+
+
+/* toast */
+
+.toast {
+    visibility: hidden;
+    opacity: 1;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: rgba(10, 10, 10, 0.95);
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 0px;
+}
+
+.toast-show {
+    visibility: visible;
+    top: 30px;
+    transition: visibility 1s, top 1s;
 }
 
 
